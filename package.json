@@ -1,0 +1,38 @@
+{
+  "name": "oauthproxy",
+  "version": "1.0.0",
+  "description": "A simple web-app to perform oath requests on behalf of client applications.",
+  "repository": "https://github.com/FractalBrew/oauthproxy.git",
+  "main": "lib/index.js",
+  "engines": {
+    "node": "6.2.0"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "prestart": "npm run build",
+    "start": "node lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dave Townsend <dtownsend@oxymoronical.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.9.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.8.0",
+    "babel-plugin-transform-es2015-parameters": "^6.9.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "express": "^4.14.0",
+    "express-session": "^1.14.0",
+    "oauth": "^0.9.14"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "babel-register": "^6.9.0",
+    "eslint": "^2.11.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.2.2",
+    "eslint-plugin-react": "^5.1.1"
+  }
+}
