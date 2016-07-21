@@ -20,7 +20,7 @@ const oauth = new OAuth.OAuth(
   process.env.SMUGMUG_KEY,
   process.env.SMUGMUG_SECRET,
   '1.0A',
-  'https://auth.fractalbrew.com/smugmug/callback',
+  'http://auth.fractalbrew.com/smugmug/callback',
   'HMAC-SHA1'
 );
 
